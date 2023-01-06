@@ -1,0 +1,11 @@
+2023-01-06 16:21:09.683  INFO DESKTOP-8PB2298 --- [           main] c.s.p.PetmeApplication                   : Starting PetmeApplication using Java 19.0.1 with PID 13084 (D:\WorkShalaka\2023-prep\SpringBoot\CRUD\petme\target\classes started by dipen in D:\WorkShalaka\2023-prep\SpringBoot\CRUD\petme)
+2023-01-06 16:21:09.701 DEBUG DESKTOP-8PB2298 --- [           main] c.s.p.PetmeApplication                   : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-06 16:21:09.703  INFO DESKTOP-8PB2298 --- [           main] c.s.p.PetmeApplication                   : The following 1 profile is active: "dev"
+2023-01-06 16:21:15.030  INFO DESKTOP-8PB2298 --- [           main] c.s.p.PetmeApplication                   : Started PetmeApplication in 6.315 seconds (process running for 8.059)
+2023-01-06 16:21:50.463  INFO DESKTOP-8PB2298 --- [nio-8081-exec-1] c.s.p.c.PetController                    : PetController getAllPets executing..
+2023-01-06 16:22:11.194  INFO DESKTOP-8PB2298 --- [nio-8081-exec-4] c.s.p.c.PetController                    : PetController getPetById executing..
+2023-01-06 16:22:14.158  INFO DESKTOP-8PB2298 --- [nio-8081-exec-5] c.s.p.c.PetController                    : PetController getAllPets executing..
+2023-01-06 16:22:17.862  INFO DESKTOP-8PB2298 --- [nio-8081-exec-6] c.s.p.c.PetController                    : PetController getPetById executing..
+2023-01-06 16:22:22.484  INFO DESKTOP-8PB2298 --- [nio-8081-exec-7] c.s.p.c.PetController                    : PetController getPetById executing..
+2023-01-06 16:22:39.603  INFO DESKTOP-8PB2298 --- [nio-8081-exec-1] c.s.p.c.PetController                    : PetController getAllPets executing..
+2023-01-06 16:23:04.885  INFO DESKTOP-8PB2298 --- [nio-8081-exec-5] c.s.p.c.PetController                    : PetController getAllPets executing..
