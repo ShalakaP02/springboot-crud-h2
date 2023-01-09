@@ -6,10 +6,13 @@ import com.shalaka.petme.service.PetService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -48,7 +51,14 @@ public class PetController {
     @PostMapping("/pet")
     public ResponseEntity<Pet> addPet(@RequestBody Pet pet) {
         Pet createdPet = petService.addNewPet(pet);
-        return new ResponseEntity<>(createdPet, HttpStatus.CREATED);
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(pet.getPetId())
+                .toUri();
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.setLocation(location);
+        return new ResponseEntity<Pet>(createdPet, responseHeaders, HttpStatus.CREATED);
+
     }
 
     @PutMapping("/pets/{petId}")
