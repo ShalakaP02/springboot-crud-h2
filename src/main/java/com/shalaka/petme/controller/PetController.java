@@ -52,7 +52,7 @@ public class PetController {
     }
 
     @PutMapping("/pets/{petId}")
-    public ResponseEntity<Pet> updateUser(@PathVariable Long petId,
+    public ResponseEntity<Pet> updatePet(@PathVariable Long petId,
                                            @RequestBody Pet pet){
 
         Pet updatedPet = petService.updatePet(petId,pet);
@@ -60,7 +60,7 @@ public class PetController {
     }
 
     @DeleteMapping("/pets/{petId}")
-    public ResponseEntity<String> addPet(@PathVariable Long petId) {
+    public ResponseEntity<String> deletePet(@PathVariable Long petId) {
         petService.deletePetById(petId);
         return new ResponseEntity<>("Pet Info successfully deleted!", HttpStatus.OK);
     }
