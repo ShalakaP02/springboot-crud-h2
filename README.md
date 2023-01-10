@@ -15,11 +15,4 @@ For demonstrations purpose we are taking example of add/remove/view pets details
 - Implemented spring profiles
 - Configured H2 Database with file storage
 - Implemented CRUD Operations
-  1) GET all  http://localhost:8081/v1/pets
-  2) GET by Id  http://localhost:8081/v1/pets/id/97
-  3) GET by type http://localhost:8081/v1/pets/type/CAT
-  4) DELETE by id http://localhost:8081/v1/pets/97
-  5) POST add http://localhost:8081/v1/pet
-  {"petType": "DOG","petName": "Puppy","petPrice": 2000}
-  6) PUT update http://localhost:8081/v1/pets/97
-  { "petType": "DOG","petName": "Floobie","petPrice": 5000}
+  Swagger Doc for reference - http://localhost:8081/swagger-ui.html
